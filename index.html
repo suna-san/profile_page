@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+JP" rel="stylesheet">
+  <title>Profile Page</title>
+</head>
+<body>
+<div id="app">
+
+  <header class="header">
+    <slide right width="300">
+      <nav class="sidebar__inner">
+        <div class="sidebar__box">
+          <ul>
+            <li class="sidebar__txt"><a href="#cont01">私について/略歴</a></li>
+            <li class="sidebar__txt"><a href="#cont02">制作サイト</a></li>
+            <li class="sidebar__txt"><a href="#cont03">フォトポートフォリオ</a></li>
+          </ul>
+        </div>
+      </nav>
+    </slide>
+    <div id="page-wrap"></div>
+  </header>
+  <sns-component></sns-component>
+
+  <div class="wrap">
+
+    <div class="container" id="cont01">
+      <div class="bg">
+        <h1 class="bg__title">
+          <span>P</span>
+          <span>r</span>
+          <span>o</span>
+          <span>f</span>
+          <span>i</span>
+          <span>l</span>
+          <span>e</span>
+          <span>P</span>
+          <span>a</span>
+          <span>g</span>
+          <span>e</span>
+        </h1>
+      </div>
+      <div class="content__block">
+        <div class="content__block__item">
+          <fade-in-component class="content__block__item__img">
+            <img src="images/img_01.jpg" alt="">
+          </fade-in-component>
+          <fade-in-component class="content__block__item__box">
+            <div class="content__title">
+              <i class="content__number">01</i>
+              <h2>私について</h2>
+            </div>
+            <div class="content__photo profile-photo">
+              <img src="images/prf.jpg" alt="self">
+            </div>
+            <div class="content__text">
+              <h3>経歴</h3>
+              <p>大学卒業後、フリーペーパーの営業・取材・制作、化粧品・健康食品企業の会報誌編集、チラシの文字校正などに携わる。その後、職業訓練校でDTP/Web制作の基本を学ぶ。</p>
+              <p>現在は企業にてクライアントサイトの制作・運用などに従事。コーディングを担当。</p>
+            </div>
+          </fade-in-component>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="cont02">
+      <div class="content__block">
+        <div class="content__block__item">
+          <fade-in-component class="content__block__item__img">
+            <img src="images/img_02.jpg" alt="">
+          </fade-in-component>
+          <fade-in-component class="content__block__item__box">
+            <div class="content__title">
+              <i class="content__number">02</i>
+              <h2>制作サイト</h2>
+            </div>
+            <div class="content__photo">
+              <img src="images/img_04.jpg" alt="self">
+            </div>
+            <div class="content__text">
+              <h3>運用ページ</h3>
+              <p>勤務先の規定により携わった案件は公開できません。そのため、自身がプライベートで作成・運用し活用しているサイトから特定可能な情報を取り除き、サイト構成の説明付きで再構成しました。</p>
+              <p>雰囲気が伝われば良いかと思います。<br>※一部のコードはこちらのプロフィールページでも流用しています。</p>
+            </div>
+            <div class="content__button">
+              <button tabindex="0" role="button" onclick="window.open('https://suna-san.github.io/dummy-site/index.html','_blank')">
+                ダミーサイトへ
+              </button>
+            </div>
+          </fade-in-component>
+        </div>
+      </div>
+      </div>
+
+      <div class="container" id="cont03">
+      <div class="content__block">
+        <div class="content__block__item">
+          <fade-in-component class="content__block__item__img">
+            <img src="images/img_03.jpg" alt="">
+          </fade-in-component>
+          <fade-in-component class="content__block__item__box">
+            <div class="content__title">
+              <i class="content__number">03</i>
+              <h2>フォトポートフォリオ</h2>
+            </div>
+            <div class="content__photo">
+              <img src="images/img_05.jpg" alt="self">
+            </div>
+            <div class="content__text">
+              <h3>ストックフォト出品作</h3>
+              <p>趣味のひとつとして写真を撮影しています。前職において業務で使用したほか、現在はストックフォトに風景を中心に出品しています（販売実績あり）</p>
+              <p>撮影情報などを記載し一部を掲載したページをTumblrで作成しております。</p>
+            </div>
+            <div class="content__button">
+              <button tabindex="0" role="button" onclick="window.open('https://portfoliosuna.tumblr.com/','_blank')">
+                フォトポートフォリオへ
+              </button>
+          </div>
+        </fade-in-component>
+      </div>
+    </div>
+    </div>
+
+  </div>
+
+<!-- <movetop-component></movetop-component> -->
+<footer-component></footer-component>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue-burger-menu@2.0.3/dist/vue-burger-menu.umd.js"></script>
+<script src="js/component.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
