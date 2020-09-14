@@ -543,9 +543,15 @@ button {
     animation: ttl__h1 1.3s 1;
   }
   @include pc {
+    margin-top: -5rem;
+    margin-left: -1.7rem;
     h1 {
       font-size: 10rem;
     }
+  }
+  @include sp {
+    margin-top: -1rem;
+    margin-left: -1.5rem;
   }
 }
 

@@ -616,8 +616,19 @@ button {
 }
 
 @media (min-width: 768px) {
+  .wrap .container:nth-child(odd) .bg {
+    margin-top: -5rem;
+    margin-left: -1.7rem;
+  }
   .wrap .container:nth-child(odd) .bg h1 {
     font-size: 10rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .wrap .container:nth-child(odd) .bg {
+    margin-top: -1rem;
+    margin-left: -1.5rem;
   }
 }
 
