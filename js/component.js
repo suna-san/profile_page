@@ -2,9 +2,6 @@
 Vue.component('footer-component', {
   template: `
   <footer>
-  <ul>
-    <li><a href="suna.renraku@gmail.com" target="_blank">mail</a></li>
-  </ul>
   <small class="copyright">Copyright suna-san. All Rights reserved.</small>
 </footer>`
 })
